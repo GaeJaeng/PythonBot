@@ -1,10 +1,12 @@
 import discord
 from discord.ext import commands
 import random
+import os
 
 app = commands.Bot(command_prefix='PBOT')
 
-token = "ODA3ODU4MzU2OTczNzMxOTAw.YB-GuQ.7ox70ZbFzPpjU4IFg3RkdPpG-qc"
+access_token = os.environ["BOT_TOKEN"]
+token = access_token
 calcResult = 0
 
 @app.event
